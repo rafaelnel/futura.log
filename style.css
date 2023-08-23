@@ -1,37 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --color-one: #F15023;
+    --color-two: #F79729;
+    --color-three: #F9A760;
+    --color-dark: #212121;
+
+}
+
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'League Spartan', sans-serif;
+    color: var(--color-dark);
     }
 
 header {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 0.5em;
+    border-bottom: 1px solid rgb(202, 202, 202);
     >div {
-        width: 80%;
-        height: 100px;
-        background-color: gray;
+        width: 1200px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }
 
 #logo {
-    background-color: orange;
-    height: 100px;
-    width: 100px;
+    >img {
+        height: 3em;
+
+    }
 }
 
 ul {
     display: flex;
-    height: 100px;
-    width: 500px;
-    background-color: black;   
+    align-items: center;
     list-style: none;
+    gap: 2em;
+    >li button {
+        background-color:var(--color-one);
+        padding: 1em;
+        border-radius: 0.5em;
+        border: 0.2em solid var(--color-one);
+        color: white;
+    }
+    >li button:hover {
+        background-color: white;
+        color: var(--color-one);
+        cursor: pointer;
+    }
 }
 
-a {
+
+li a {
+        color: var(--color-dark);
         text-decoration: none;
-        color: aliceblue;
+        padding: 1em;
+        font-weight: 600;
     }
+    li a:hover {
+        color: var(--color-one);
+
+    }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main_section{
+    display: flex;
+    width: 1100px;
+}
+
+#main_left{
+    margin-right: 2em;
+    gap: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    >h2 {
+        color: var(--color-two);
+        font-weight: 500;
+        font-size: 2em;
+    }
+
+    >button{
+        color: white;
+        font-size: 1.5em;
+        background-color: var(--color-one);
+        padding: 0.7em;
+        width: 12em;
+        border-radius: 0.5em;
+        border: 0.1em solid var(--color-one);
+        
+    }
+
+    >button:hover {
+        background-color: white;
+        color: var(--color-one);
+        cursor: pointer;
+    }
+}
+
+h1 {
+    font-size: 100px;
+    color: var(--color-one);
+}
+
+#mainimg {
+    width: 800px;
+}
+
+#quem_somos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -1em ;
+    background-color: rgb(226, 226, 226);
+    >div {
+        width: 1100px;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    >div h2 {
+        padding: 1.5em 0 1em 0;
+        font-size: 4em;
+        color: var(--color-dark);
+    }
+
+}
+
+#qs_div {
+    display: flex;
+    gap: 4em;
+    padding-bottom: 10em;
+
+    >img {
+        width: 30em;
+    }
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        
+    }
+
+    >div h3 {
+        font-size: 6em;
+        color: var(--color-one);
+    }
+    >div h4 {
+        margin-top: -0.7em;
+        font-size: 2em;
+        color: var(--color-two);
+    }
+    >div p {
+        font-size: 1.5em;
+
+    }
+
+}
+
+#valores_div {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+
+
+    
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        justify-content: center;
+        
+    }
+
+    >div h3 {
+        align-self: center;
+        font-size: 4em;
+        color: var(--color-one);
+    }
+    
+    >div p {
+        font-size: 1.4em;
+        text-align: center;
+
+    }
+
+}
+
+
