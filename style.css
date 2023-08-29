@@ -16,6 +16,10 @@
     scroll-behavior: smooth;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
 header {
     position: fixed;
     z-index: 1;
