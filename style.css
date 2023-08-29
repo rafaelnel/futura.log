@@ -17,6 +17,10 @@
     }
 
 header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: white;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -48,9 +52,11 @@ ul {
         border-radius: 0.5em;
         border: 0.2em solid var(--color-one);
         color: white;
-        transition: all 1s;
-        font-weight: 500;
+        transition: all 0.5s;
+        font-weight: 600;
+        font-size: 1em;
     }
+    
     >li button:hover {
         background-color: white;
         color: var(--color-one);
@@ -81,6 +87,7 @@ section {
 #main_section{
     display: flex;
     width: 1100px;
+    margin-top: 5em;
 }
 
 #main_left{
@@ -98,6 +105,7 @@ section {
     >button{
         color: white;
         font-size: 1.5em;
+        font-weight: 500;
         background-color: var(--color-one);
         padding: 0.7em;
         width: 12em;
@@ -123,15 +131,12 @@ h1 {
     width: 800px;
 }
 
-#quem_somos>div {
 
-}
-
-#quem_somos, #nossos_servicos {
+.sections {
     display: flex;
     flex-direction: column;
-    position: relative;
-    background-color: rgb(226, 226, 226);
+    margin-top: -0.3em;
+    z-index: 1;
     >div {
         width: 1100px;
         padding: 1em;
@@ -146,6 +151,16 @@ h1 {
         font-size: 4em;
     }
 
+}
+
+#quem_somos{
+    background-image: url(img/fundo.png);
+    background-size: 100%;
+
+    >div>h2 {
+        color: white;
+    }
+    
 }
 
 #qs_div {
@@ -175,10 +190,17 @@ h1 {
     }
     >div p {
         font-size: 1.5em;
+        color: white;
+
+    }
+    >div b {
+        color: white;
 
     }
 
 }
+
+
 
 #valores_div {
     display: flex;
@@ -186,7 +208,7 @@ h1 {
     gap: 4em;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10em;
+    padding: 10em 0;
 
 
     
@@ -195,6 +217,7 @@ h1 {
         flex-direction: column;
         gap: 0.5em;
         justify-content: center;
+        align-items: center;
         
     }
 
@@ -267,7 +290,6 @@ h1 {
 #local {
     display: flex;
     flex-direction: column;
-    position: relative;
     >div {
         width: 1100px;
         padding: 1em;
@@ -275,6 +297,9 @@ h1 {
         flex-direction: column;
         justify-content: start;
         align-items: center;
+    }
+    >div h2 {
+        color: var(--color-one);
     }
 }
 
@@ -290,8 +315,50 @@ h1 {
         display: flex;
         flex-direction: column;
         gap: 1em;
-        justify-content: center;
-        
+        justify-content: end;
+
+    
     }
+    >div h3 {
+        color: var(--color-one);
+        font-size: 3em;
+    }  
+    >div p {
+        font-size: 1.5em;
+    }   
 }
 
+#contatos {
+    padding-bottom: 10em;
+}
+
+#c_div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+button{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: var(--color-one);
+    padding: 0.7em;
+    width: 12em;
+    border-radius: 0.5em;
+    border: 0.1em solid var(--color-one);
+    transition: all 0.5s;
+    
+}
+
+button:hover {
+    background-color: white;
+    color: var(--color-one);
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #212121;
+    height: 500px;
+}
