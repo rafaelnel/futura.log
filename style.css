@@ -17,11 +17,10 @@
     }
 
 header {
-    position: fixed;
     z-index: 1;
     top: 0;
     background-color: white;
-    display: flex;
+    display: none;
     justify-content: center;
     width: 100%;
     padding: 0.5em;
@@ -31,37 +30,20 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     }
 }
 
 #logo {
     >img {
         height: 3em;
-
     }
 }
 
 ul {
-    display: flex;
     align-items: center;
     list-style: none;
     gap: 2em;
-    >li button {
-        background-color:var(--color-one);
-        padding: 1em;
-        border-radius: 0.5em;
-        border: 0.2em solid var(--color-one);
-        color: white;
-        transition: all 0.5s;
-        font-weight: 600;
-        font-size: 1em;
-    }
-    
-    >li button:hover {
-        background-color: white;
-        color: var(--color-one);
-        cursor: pointer;
-    }
 }
 
 
@@ -102,12 +84,13 @@ section {
         font-size: 2em;
     }
 
-    >button{
+    >a{
         color: white;
         font-size: 1.5em;
         font-weight: 500;
         background-color: var(--color-one);
         padding: 0.7em;
+        text-align: center;
         width: 12em;
         border-radius: 0.5em;
         border: 0.1em solid var(--color-one);
@@ -115,7 +98,7 @@ section {
         
     }
 
-    >button:hover {
+    >a:hover {
         background-color: white;
         color: var(--color-one);
         cursor: pointer;
@@ -176,6 +159,7 @@ h1 {
         flex-direction: column;
         gap: 1em;
         justify-content: center;
+        align-items: center;
         
     }
 
@@ -191,7 +175,7 @@ h1 {
     >div p {
         font-size: 1.5em;
         color: white;
-
+        text-align: center;
     }
     >div b {
         color: white;
@@ -281,6 +265,7 @@ h1 {
     justify-content:space-between;
     align-items: center;
     padding: 2em 0;
+    margin-bottom: 10em;
 }
 
 .img_parc {
@@ -291,22 +276,29 @@ h1 {
     display: flex;
     flex-direction: column;
     >div {
+        background-color:white;
+        border: rgb(201, 201, 201) 2px solid;
         width: 1100px;
-        padding: 1em;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        gap: 5em;
+        padding:5em 10em;
+        border-radius: 5em;
+        box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.1);
     }
     >div h2 {
-        color: var(--color-one);
+        background-color: var(--color-one);
+        color: white;
+        padding: 0.2em 0.4em;
     }
 }
 
 #loc_div {
     display: flex;
     gap: 4em;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
 
     >img {
         width: 30em;
@@ -329,36 +321,440 @@ h1 {
 }
 
 #contatos {
-    padding-bottom: 10em;
+    padding: 10em;
+    >div {
+        gap: 5em;
+    }
+    >div>h2 {
+        background-color: var(--color-one);
+        color: white;
+        padding: 0.2em 0.4em;
+    }
 }
 
 #c_div {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    align-items: center;
 }
 
-button{
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
     color: white;
     font-size: 1.5em;
     font-weight: 500;
     background-color: var(--color-one);
     padding: 0.7em;
-    width: 12em;
     border-radius: 0.5em;
     border: 0.1em solid var(--color-one);
     transition: all 0.5s;
-    
+    text-decoration: none;
+    >i {
+        color: white;
+        transition: all 0.5s;
+    }
 }
 
-button:hover {
+.button:hover {
     background-color: white;
     color: var(--color-one);
     cursor: pointer;
+    >i {
+        color:var(--color-one);
+    }
 }
 
 
 footer {
     background-color: #212121;
     height: 500px;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5em;
+        border-bottom: 1px solid rgb(202, 202, 202);
+        >div {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    
+    #logo {
+        >img {
+            height: 3em;
+    
+        }
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 2em;
+    }
+    
+    
+    li a {
+            color: var(--color-dark);
+            text-decoration: none;
+            padding: 1em;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        li a:hover {
+            color: var(--color-one);
+    
+        }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #main_section{
+        display: flex;
+        width: 350px;
+        margin-top: 5em;
+        flex-direction: column-reverse ;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #main_left{
+        gap: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3em;
+        >h2 {
+            color: var(--color-two);
+            font-weight: 500;
+            font-size: 1em;
+            text-align: center;
+        }
+    
+        >a{
+            color: white;
+            font-size: 1em;
+            font-weight: 500;
+            background-color: var(--color-one);
+            padding: 0.7em;
+            text-align: center;
+            width: 12em;
+            border-radius: 0.5em;
+            border: 0.1em solid var(--color-one);
+            transition: all 0.5s;
+            
+        }
+    
+        >a:hover {
+            background-color: white;
+            color: var(--color-one);
+            cursor: pointer;
+        }
+    }
+    
+    h1 {
+        font-size: 50px;
+        color: var(--color-one);
+        text-align: center;
+
+    }
+    
+    #mainimg {
+        width: 300px;
+    }
+    
+    
+    .sections {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        >div {
+            width: 350px;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+    
+        >div h2 {
+            padding: 1.5em 0 1em 0;
+            font-size: 2em;
+        }
+    
+    }
+    
+    #quem_somos{
+        background-image: url(img/fundo.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    
+        >div>h2 {
+            color: white;
+        }
+        
+    }
+    
+    #qs_div {
+        display: flex;
+        gap: 2em;
+        padding-bottom: 1em;
+    
+        >img {
+            width: 30em;
+        }
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    
+        >div h3 {
+            font-size: 2em;
+            color: var(--color-one);
+        }
+        >div h4 {
+            margin-top: -0.5em;
+            font-size: 1em;
+            color: var(--color-two);
+        }
+        >div p {
+            font-size: 0.8em;
+            color: white;
+            text-align: center;
+            padding: 0 4em;
+        }
+        >div b {
+            color: white;
+    
+        }
+    
+    }
+    
+    
+    
+    #valores_div {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        padding: 4em 0;
+    
+    
+        
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    
+        >div h3 {
+            align-self: center;
+            font-size: 2em;
+            color: var(--color-one);
+        }
+        
+        >div p {
+            font-size: 1em;
+            text-align: center;
+            padding: 0 4em;
+            
+    
+        }
+    
+    }
+    
+    
+    #nossos_servicos {
+        background-color: var(--color-one);
+        padding-bottom: 10em;
+        flex-wrap: wrap;
+    
+    
+        >div h2 {
+            color: white;
+        }
+    
+    }
+    
+    
+    #ns_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2em;
+    
+    
+        >div h3 {
+            font-size: 1em;
+            color: white;
+            background-color: var(--color-two);
+            padding: 0.5em;
+            text-align: center;
+            
+        }
+        >div p {
+            font-size: 1em;
+            color: white;
+            padding: 0.5 0.5em;
+            text-align: center;
+    
+        }
+    }
+    
+    .card_serv {
+        width: 300px;
+    }
+    
+    #parceiros {
+        display: flex;
+        width: 100%;
+        justify-content:space-evenly;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 2em;
+        flex-wrap: wrap;
+        padding: 1em 1em;
+    }
+    
+    .img_parc {
+        height: 50px;
+    }
+    
+    #local {
+        display: flex;
+        flex-direction: column;
+        >div {
+            background-color:white;
+            border: rgb(201, 201, 201) 2px solid;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 2em;
+            padding:2em 5em;
+            border-radius: 2em;
+            box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.1);
+        }
+        >div h2 {
+            background-color: var(--color-one);
+            color: white;
+            padding: 0.2em 0.4em;
+        }
+    }
+    
+    #loc_div {
+        display: flex;
+        gap: 2em;
+        padding-bottom: 3em;
+        flex-direction: column;
+    
+        >iframe {
+            width: 300px;
+            height: 200px;
+
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            justify-content: end;
+    
+        
+        }
+        >div h3 {
+            color: var(--color-one);
+            font-size: 2em;
+        }  
+        >div p {
+            font-size: 1em;
+        }   
+    }
+    
+    #contatos {
+        padding: 10em;
+        >div {
+            gap: 5em;
+        }
+        >div>h2 {
+            background-color: var(--color-one);
+            color: white;
+            padding: 0.2em 0.4em;
+        }
+    }
+    
+    #c_div {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+    
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 500;
+        background-color: var(--color-one);
+        padding: 0.7em;
+        border-radius: 0.5em;
+        border: 0.1em solid var(--color-one);
+        transition: all 0.5s;
+        text-decoration: none;
+        >i {
+            color: white;
+            transition: all 0.5s;
+        }
+    }
+    
+    .button:hover {
+        background-color: white;
+        color: var(--color-one);
+        cursor: pointer;
+        >i {
+            color:var(--color-one);
+        }
+    }
+    
+    
+    footer {
+        background-color: #212121;
+        height: 500px;
+    }
+    
+
+
 }
