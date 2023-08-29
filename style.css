@@ -17,10 +17,11 @@
     }
 
 header {
+    position: fixed;
     z-index: 1;
     top: 0;
+    display: flex;
     background-color: white;
-    display: none;
     justify-content: center;
     width: 100%;
     padding: 0.5em;
@@ -33,6 +34,7 @@ header {
 
     }
 }
+
 
 #logo {
     >img {
@@ -378,11 +380,10 @@ footer {
 @media (max-width: 600px) {
 
     header {
-        position: fixed;
         z-index: 1;
         top: 0;
         background-color: white;
-        display: flex;
+        display: none;
         justify-content: center;
         width: 100%;
         padding: 0.5em;
@@ -397,7 +398,7 @@ footer {
     
     #logo {
         >img {
-            height: 3em;
+            height: 1em;
     
         }
     }
@@ -406,7 +407,7 @@ footer {
         display: flex;
         align-items: center;
         list-style: none;
-        gap: 2em;
+        gap: 1em;
     }
     
     
