@@ -66,6 +66,54 @@ li a {
 
     }
 
+#insta_bottom {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    text-decoration: none;
+    
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2em;
+        justify-content: center;
+        padding: 3em 1em;
+        background-color: var(--color-one);
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.1);
+        transition: 1s ease;
+        border: 0.2em solid var(--color-one);
+    }
+
+    >div i, >div h3 {
+        font-size: 2em;
+        transition: 1s;
+            color: white;
+        
+    }
+
+    >div:hover {
+        flex-direction: row;
+        gap:1em;
+        background-color: white;
+        >i {
+            color: var(--color-one);
+        }
+        >h3 {
+            color: var(--color-one);
+
+        }
+        
+    }
+}
+
+
+
+
+
+
 section {
     display: flex;
     justify-content: center;
@@ -119,6 +167,14 @@ h1 {
 
 #mainimg {
     width: 800px;
+}
+
+#menu_bars {
+    display: none;
+}
+
+#button_mobile {
+    display: none;
 }
 
 
@@ -267,16 +323,39 @@ h1 {
 }
 
 #parceiros {
-    display: flex;
+    display: grid;
+    height: 200px;
     width: 100%;
-    justify-content:space-between;
-    align-items: center;
-    padding: 2em 0;
-    margin-bottom: 10em;
+    overflow: hidden;
+    margin: 5em 0 10em 0;
+}
+
+.slider_track {
+    display: flex;
+    gap: 4em;
+    width: 200%;
+    animation: scroll 20s linear infinite ;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50.5%));
+    }
+    
 }
 
 .img_parc {
-    height: 100px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+    >img {
+        width: 100%;
+    } 
+    
 }
 
 #local {
@@ -388,8 +467,8 @@ footer {
         z-index: 1;
         top: 0;
         background-color: white;
-        display: none;
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         padding: 0.5em;
         border-bottom: 1px solid rgb(202, 202, 202);
@@ -403,7 +482,7 @@ footer {
     
     #logo {
         >img {
-            height: 1em;
+            height: 2em;
     
         }
     }
@@ -427,6 +506,32 @@ footer {
             color: var(--color-one);
     
         }
+
+        #header_div{
+            gap: 4em;
+        }
+
+        #mainimg {
+            width: 300px;
+        }
+    
+        #nav_bar {
+            display: none;
+        }
+        #insta_bottom {
+            display: none;
+        }
+    
+        #menu_bars {
+            display: flex;
+            justify-content: end;
+            font-size: 3em;
+        }
+
+        #button_mobile {
+            display: flex;
+        }
+
     
     section {
         display: flex;
@@ -451,6 +556,7 @@ footer {
         flex-direction: column;
         align-items: center;
         padding-bottom: 3em;
+        margin: 0;
         >h2 {
             color: var(--color-two);
             font-weight: 500;
@@ -486,9 +592,7 @@ footer {
 
     }
     
-    #mainimg {
-        width: 300px;
-    }
+    
     
     
     .sections {
@@ -525,7 +629,7 @@ footer {
     #qs_div {
         display: flex;
         gap: 2em;
-        padding-bottom: 1em;
+        padding-bottom: 4em;
     
         >img {
             width: 30em;
@@ -628,7 +732,7 @@ footer {
             
         }
         >div p {
-            font-size: 1em;
+            font-size: 1.5em;
             color: white;
             padding: 0.5 0.5em;
             text-align: center;
@@ -641,20 +745,39 @@ footer {
     }
     
     #parceiros {
-        display: flex;
+        display: grid;
+        height: 200px;
         width: 100%;
-        justify-content:space-evenly;
-        align-items: center;
+        overflow: hidden;
+        margin: 2em 0 5em 0;
+    }
+    
+    .slider_track {
+        display: flex;
         gap: 1em;
-        margin-bottom: 2em;
-        flex-wrap: wrap;
-        padding: 1em 1em;
+        width: 100%;
+        animation: scroll 20s linear infinite ;
     }
     
-    .img_parc {
-        height: 50px;
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-50.3%));
+        }
+        
     }
     
+    .img_parc {width: 200px;
+        display: flex;
+        align-items: center;
+    
+        >img {
+            width: 100%;
+        } 
+        
+    }
     #local {
         display: flex;
         flex-direction: column;
@@ -732,7 +855,7 @@ footer {
         justify-content: center;
         gap: 0.5em;
         color: white;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 500;
         background-color: var(--color-one);
         padding: 0.7em;
