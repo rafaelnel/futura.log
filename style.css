@@ -200,8 +200,8 @@ h1 {
 }
 
 #quem_somos{
-    background-image: url(img/fundo.png);
-    background-size: 100%;
+    background-color: #212121;
+
 
     >div>h2 {
         color: white;
@@ -231,7 +231,7 @@ h1 {
         color: var(--color-one);
     }
     >div h4 {
-        margin-top: -0.7em;
+        margin-top: -1em;
         font-size: 2em;
         color: var(--color-two);
     }
@@ -616,9 +616,8 @@ footer {
     }
     
     #quem_somos{
-        background-image: url(img/fundo.png);
-        background-repeat: no-repeat;
-        background-size: auto;
+        background-color: #212121;
+        margin: 0;
     
         >div>h2 {
             color: white;
