@@ -167,6 +167,7 @@ h1 {
 
 #mainimg {
     width: 800px;
+    margin-bottom: -0.3em;
 }
 
 #menu_bars {
@@ -181,11 +182,9 @@ h1 {
 .sections {
     display: flex;
     flex-direction: column;
-    margin-top: -0.3em;
     z-index: 1;
     >div {
         width: 1100px;
-        padding: 1em;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -248,6 +247,20 @@ h1 {
 }
 
 
+#valores {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    >div {
+        width: 600px;
+    }
+    >div>img {
+        height: 800px;
+        opacity: 0.8;
+    }
+}
+
+
 
 #valores_div {
     display: flex;
@@ -255,7 +268,6 @@ h1 {
     gap: 4em;
     justify-content: center;
     align-items: center;
-    padding: 10em 0;
 
 
     
@@ -269,14 +281,15 @@ h1 {
     }
 
     >div h3 {
-        align-self: center;
-        font-size: 4em;
+        align-self: end;
+        font-size: 3em;
         color: var(--color-one);
     }
     
     >div p {
         font-size: 1.4em;
-        text-align: center;
+        text-align: end;
+        padding-left: 8em;
 
     }
 
@@ -512,7 +525,8 @@ footer {
         }
 
         #mainimg {
-            width: 300px;
+            width: 400px;
+            margin-right: -1em;
         }
     
         #nav_bar {
@@ -555,7 +569,7 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 3em;
+        padding: 1em 0 2em 0;
         margin: 0;
         >h2 {
             color: var(--color-two);
@@ -595,6 +609,7 @@ footer {
     
     
     
+    
     .sections {
         display: flex;
         flex-direction: column;
@@ -630,9 +645,7 @@ footer {
         gap: 2em;
         padding-bottom: 4em;
     
-        >img {
-            width: 30em;
-        }
+       
         >div {
             display: flex;
             flex-direction: column;
@@ -663,8 +676,18 @@ footer {
         }
     
     }
-    
-    
+
+    #valores {
+        display: flex;
+        flex-direction: column;
+
+        >div>img {
+            display: none;
+            
+        }
+    }
+
+
     
     #valores_div {
         display: flex;
@@ -694,7 +717,7 @@ footer {
         >div p {
             font-size: 1em;
             text-align: center;
-            padding: 0 4em;
+            padding: 0 10em;
             
     
         }
