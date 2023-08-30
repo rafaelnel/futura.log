@@ -520,12 +520,9 @@ footer {
     
         }
 
-        #header_div{
-            gap: 4em;
-        }
 
         #mainimg {
-            width: 400px;
+            width: 350px;
             margin-right: -1em;
         }
     
@@ -680,6 +677,9 @@ footer {
     #valores {
         display: flex;
         flex-direction: column;
+        >div {
+            width: 350px;
+        }
 
         >div>img {
             display: none;
@@ -717,7 +717,7 @@ footer {
         >div p {
             font-size: 1em;
             text-align: center;
-            padding: 0 10em;
+            padding: 0 3em;
             
     
         }
