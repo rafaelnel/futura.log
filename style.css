@@ -31,7 +31,7 @@ header {
     padding: 0.5em;
     border-bottom: 1px solid rgb(202, 202, 202);
     >div {
-        width: 1200px;
+        width: 1000px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -50,7 +50,7 @@ ul {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 2em;
+    gap: 1em;
 }
 
 
@@ -59,7 +59,7 @@ li a {
         text-decoration: none;
         padding: 1em;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     li a:hover {
         color: var(--color-one);
@@ -76,7 +76,7 @@ li a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 2em;
+        height: 1em;
         justify-content: center;
         padding: 3em 1em;
         background-color: var(--color-one);
@@ -88,25 +88,13 @@ li a {
     }
 
     >div i, >div h3 {
-        font-size: 2em;
+        font-size: 1em;
         transition: 1s;
             color: white;
         
     }
 
-    >div:hover {
-        flex-direction: row;
-        gap:1em;
-        background-color: white;
-        >i {
-            color: var(--color-one);
-        }
-        >h3 {
-            color: var(--color-one);
 
-        }
-        
-    }
 }
 
 
@@ -123,7 +111,7 @@ section {
 
 #main_section{
     display: flex;
-    width: 1100px;
+    width: 900px;
     margin-top: 5em;
 }
 
@@ -136,10 +124,10 @@ section {
     >h2 {
         color: var(--color-two);
         font-weight: 500;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
-    >a{
+    /* >a{
         color: white;
         font-size: 1.5em;
         font-weight: 500;
@@ -157,16 +145,16 @@ section {
         background-color: white;
         color: var(--color-one);
         cursor: pointer;
-    }
+    } */
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 5em;
     color: var(--color-one);
 }
 
 #mainimg {
-    width: 800px;
+    width: 700px;
     margin-bottom: -0.3em;
 }
 
@@ -184,7 +172,7 @@ h1 {
     flex-direction: column;
     z-index: 1;
     >div {
-        width: 1100px;
+        width: 900px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -193,57 +181,81 @@ h1 {
 
     >div h2 {
         padding: 1.5em 0 1em 0;
-        font-size: 4em;
+        font-size: 3em;
     }
 
 }
 
 #quem_somos{
-    background-color: #212121;
-
-
-    >div>h2 {
-        color: white;
-    }
+    background-color: #ffffff;
     
+    >div>button>h2 {
+        padding: 0;
+
+    }
+}
+
+#sanf {
+    border: #a7a7a7 solid 1px;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+
+#sanf:hover {
+    background-color: #cccccc;
+    text-decoration: underline;
+}
+
+.ativo {
+    background-color: #cccccc;
+
+}
+
+.sanfona {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+
+    >i {
+        margin: 0 0 0 0.5em;
+        font-size: 2em;
+    }
+
 }
 
 #qs_div {
-    display: flex;
-    gap: 4em;
-    padding-bottom: 10em;
-
-    >img {
-        width: 30em;
-    }
+    display: none;
+    gap: 3em;
+    padding: 10em 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease-out;
+    
+    
     >div {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
         justify-content: center;
         align-items: center;
         
     }
 
     >div h3 {
-        font-size: 6em;
+        font-size: 4em;
         color: var(--color-one);
     }
     >div h4 {
-        margin-top: -1em;
-        font-size: 2em;
+        margin-top: -1.5em;
+        font-size: 1.5em;
         color: var(--color-two);
     }
     >div p {
         font-size: 1.5em;
-        color: white;
         text-align: center;
     }
-    >div b {
-        color: white;
-
-    }
-
 }
 
 
@@ -265,9 +277,10 @@ h1 {
 #valores_div {
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 3em;
     justify-content: center;
     align-items: center;
+    padding: 5em 0;
 
 
     
@@ -281,15 +294,15 @@ h1 {
     }
 
     >div h3 {
-        align-self: end;
-        font-size: 3em;
+        align-self: start;
+        font-size: 2em;
         color: var(--color-one);
     }
     
     >div p {
-        font-size: 1.4em;
-        text-align: end;
-        padding-left: 8em;
+        font-size: 1.2em;
+        text-align: start;
+        padding-right: 3em;
 
     }
 
@@ -298,7 +311,7 @@ h1 {
 
 #nossos_servicos {
     background-color: var(--color-one);
-    padding-bottom: 10em;
+    padding: 5em 0 10em 0;
     flex-wrap: wrap;
 
 
@@ -317,7 +330,7 @@ h1 {
 
 
     >div h3 {
-        font-size: 3em;
+        font-size: 2em;
         color: white;
         background-color: var(--color-two);
         padding: 0.5em;
@@ -325,14 +338,14 @@ h1 {
     }
     >div p {
         padding-top: 0.5em ;
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: white;
 
     }
 }
 
 .card_serv {
-    width: 500px;
+    width: 400px;
 }
 
 #parceiros {
@@ -340,7 +353,7 @@ h1 {
     height: 200px;
     width: 100%;
     overflow: hidden;
-    margin: 5em 0 10em 0;
+    margin: 0em 0 6em 0;
 }
 
 .slider_track {
@@ -377,13 +390,13 @@ h1 {
     >div {
         background-color:white;
         border: rgb(201, 201, 201) 2px solid;
-        width: 1100px;
+        width: 800px;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        gap: 5em;
-        padding:5em 10em;
+        gap: 3em;
+        padding:6em;
         border-radius: 5em;
         box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.1);
     }
@@ -397,7 +410,6 @@ h1 {
 #loc_div {
     display: flex;
     gap: 4em;
-    padding-bottom: 5em;
 
     >img {
         width: 30em;
@@ -412,10 +424,10 @@ h1 {
     }
     >div h3 {
         color: var(--color-one);
-        font-size: 3em;
+        font-size: 2em;
     }  
     >div p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }   
 }
 
@@ -444,7 +456,7 @@ h1 {
     justify-content: center;
     gap: 0.5em;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     background-color: var(--color-one);
     padding: 0.7em;
