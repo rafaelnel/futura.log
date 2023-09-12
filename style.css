@@ -212,6 +212,7 @@ h1 {
 }
 
 .sanfona {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,6 +305,57 @@ h1 {
         text-align: start;
         padding-right: 3em;
 
+    }
+
+}
+
+#provasocial {
+    padding: 2em 0 6em 0;
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+.pv_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    >h2 {
+        display: flex;
+        padding: 0;
+        font-size: 3em;
+        color: var(--color-one);
+        align-items: center;
+        font-weight: 600;
+    }
+    >h2 b {
+        font-size: 2em;
+        color: var(--color-one);
+        font-weight: 600;
+        padding-top: 0.1em ;
+    }
+
+}
+
+
+
+.icon-prova{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-one);
+    border-radius: 50%;
+    padding: 1em;
+    box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    >i {
+        color: white;
+        font-size: 2em;
     }
 
 }
@@ -640,21 +692,52 @@ footer {
     }
     
     #quem_somos{
-        background-color: #212121;
-        margin: 0;
-    
-        >div>h2 {
-            color: white;
-        }
+        background-color: #ffffff;
         
+        >div>button>h2 {
+            padding: 0;
+    
+        }
     }
+
+    #sanf {
+        border: #a7a7a7 solid 1px;
+        transition: 0.5s;
+        cursor: pointer;
+    } 
+    
+    #sanf:hover {
+        background-color: #cccccc;
+        text-decoration: underline;
+    }
+    
+    .ativo {
+        background-color: #cccccc;
+    
+    }
+    
+    .sanfona {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        width: 100%;
+
+    
+        >i {
+            margin: 0 0 0 0.5em;
+            font-size: 2em;
+        }
+    
+    }
+    
     
     #qs_div {
         display: flex;
         gap: 2em;
-        padding-bottom: 4em;
+        padding: 8em 2em;
     
-       
         >div {
             display: flex;
             flex-direction: column;
@@ -675,14 +758,9 @@ footer {
         }
         >div p {
             font-size: 0.8em;
-            color: white;
             text-align: center;
-            padding: 0 4em;
         }
-        >div b {
-            color: white;
-    
-        }
+ 
     
     }
 
@@ -707,7 +785,7 @@ footer {
         gap: 2em;
         justify-content: center;
         align-items: center;
-        padding: 4em 0;
+        padding: 2em 0;
     
     
         
@@ -735,18 +813,49 @@ footer {
         }
     
     }
+
+    #provasocial {
+        padding: 2em 0 6em 0;
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
+    
+    .pv_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        >h2 {
+            font-size: 2em;
+            padding: 0 2.5em;
+            text-align: center;
+        }
+        >h2 b {
+            font-size: 2em;
+        }
+    
+    }
+    
+    
+    
+    .icon-prova{
+        width: 3em;
+        >i {
+            color: white;
+            font-size: 2em;
+        }
+    
+    }
     
     
     #nossos_servicos {
         background-color: var(--color-one);
-        padding-bottom: 10em;
-        flex-wrap: wrap;
-    
-    
-        >div h2 {
-            color: white;
-        }
-    
+        padding: 5em 0;
+  
     }
     
     
@@ -758,15 +867,13 @@ footer {
     
     
         >div h3 {
-            font-size: 1em;
-            color: white;
-            background-color: var(--color-two);
+            font-size: 1.5em;
             padding: 0.5em;
             text-align: center;
             
         }
         >div p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: white;
             padding: 0.5 0.5em;
             text-align: center;
