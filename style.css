@@ -543,8 +543,6 @@ footer {
 @media (max-width: 600px) {
 
     header {
-        z-index: 2;
-        top: 0;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -735,7 +733,8 @@ footer {
     #qs_div {
         display: none;
         gap: 2em;
-        padding: 8em 2em;
+        padding: 7em 2em;
+        max-height: 0em;
     
         >div {
             display: flex;
@@ -766,6 +765,7 @@ footer {
     #valores {
         display: flex;
         flex-direction: column;
+        margin: 0;
         >div {
             width: 350px;
         }
@@ -785,7 +785,7 @@ footer {
         gap: 2em;
         justify-content: center;
         align-items: center;
-        padding: 0em 0;
+        padding: 2em 0;
         
     
     
