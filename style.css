@@ -22,7 +22,7 @@
 
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     display: flex;
     background-color: white;
@@ -66,25 +66,24 @@ li a {
 
     }
 
+main {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
 #insta_bottom {
-    position: fixed;
-    top: 15%;
-    right: 0;
     text-decoration: none;
-    
+    display: flex;
+    align-self: flex-end;
     >div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 1em;
-        justify-content: center;
-        padding: 3em 1em;
+        padding: 2em 1em;
+        border-bottom-left-radius: 1em;
+        border-top-left-radius: 1em;
         background-color: var(--color-one);
-        border-top-left-radius: 2em;
-        border-bottom-left-radius: 2em;
-        box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.1);
-        transition: 1s ease;
-        border: 0.2em solid var(--color-one);
     }
 
     >div i, >div h3 {
@@ -111,8 +110,7 @@ section {
 
 #main_section{
     display: flex;
-    width: 900px;
-    margin-top: 5em;
+    width: 1000px;
 }
 
 #main_left{
@@ -155,7 +153,7 @@ h1 {
 
 #mainimg {
     width: 700px;
-    margin-bottom: -0.3em;
+    margin-bottom: -0.5em;
 }
 
 #menu_bars {
@@ -187,7 +185,6 @@ h1 {
 }
 
 #quem_somos{
-    background-color: #ffffff;
     
     >div>button>h2 {
         padding: 0;
@@ -202,17 +199,15 @@ h1 {
 } 
 
 #sanf:hover {
-    background-color: #cccccc;
-    text-decoration: underline;
+    background-color: #e4e4e4;
 }
 
 .ativo {
-    background-color: #cccccc;
+    background-color: #e4e4e4;
 
 }
 
 .sanfona {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,8 +217,14 @@ h1 {
     >i {
         margin: 0 0 0 0.5em;
         font-size: 2em;
+        rotate: 180deg;
     }
 
+}
+
+.rotated-image {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 #qs_div {
@@ -263,19 +264,20 @@ h1 {
 #valores {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 4em 0;
     >div {
-        width: 600px;
+        width: 700px;
     }
     >div>img {
         height: 800px;
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 
 
 
 #valores_div {
+    margin-left: 10em;
     display: flex;
     flex-direction: column;
     gap: 3em;
@@ -541,7 +543,7 @@ footer {
 @media (max-width: 600px) {
 
     header {
-        z-index: 1;
+        z-index: 2;
         top: 0;
         background-color: white;
         display: flex;
@@ -618,7 +620,6 @@ footer {
     #main_section{
         display: flex;
         width: 350px;
-        margin-top: 5em;
         flex-direction: column-reverse ;
         align-items: center;
         justify-content: center;
@@ -708,7 +709,6 @@ footer {
     
     #sanf:hover {
         background-color: #cccccc;
-        text-decoration: underline;
     }
     
     .ativo {
@@ -717,7 +717,6 @@ footer {
     }
     
     .sanfona {
-        background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -734,7 +733,7 @@ footer {
     
     
     #qs_div {
-        display: flex;
+        display: none;
         gap: 2em;
         padding: 8em 2em;
     
@@ -780,12 +779,14 @@ footer {
 
     
     #valores_div {
+        margin-left: 0em;
         display: flex;
         flex-direction: column;
         gap: 2em;
         justify-content: center;
         align-items: center;
-        padding: 2em 0;
+        padding: 0em 0;
+        
     
     
         

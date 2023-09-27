@@ -10,6 +10,7 @@ function Navbar_slide() {
   function Sanfona() {
     let sb = document.getElementById("qs_div");
     let sanf = document.getElementById("sanf");
+    let i = document.getElementById("i-sanf");
     if (sb.style.display === "flex") {
       sb.style.display = "none";
     } else {
@@ -21,6 +22,6 @@ function Navbar_slide() {
       sb.style.maxHeight = sb.scrollHeight + "px";
     } 
     sanf.classList.toggle("ativo");
-    
+    i.classList.toggle("rotated-image");
   }
 
