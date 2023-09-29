@@ -25,3 +25,10 @@ function Navbar_slide() {
     i.classList.toggle("rotated-image");
   }
 
+
+function Quemsomos() {
+  let sb = document.getElementById("qs_div");
+  if (sb.style.display === "none") {
+    Sanfona();
+  }
+}
