@@ -29,7 +29,8 @@ header {
     justify-content: center;
     width: 100%;
     padding: 0.5em;
-    border-bottom: 1px solid rgb(202, 202, 202);
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+
     >div {
         width: 1000px;
         display: flex;
@@ -563,6 +564,7 @@ footer {
     #logo {
         >img {
             height: 4em;
+            margin-left: -1em;
     
         }
     }
@@ -625,7 +627,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 3em;
 }
 
     #button_mobile {
