@@ -9,26 +9,23 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    
-    <script src="script.js"></script>
     <title>Futura Log</title>
 </head>
 <body>
     <header id="header">
             <div id="header_div">
-                <a id="logo" href="#"><img src="img/logofuturalog.png" alt=""></a> 
+                <div>
+                    <a id="logo" href="index.html"><img src="img/logofuturalog.png" alt=""></a> 
+                    <i onclick="Menu()" id="menu-icon" class="fa-solid fa-bars"></i>
+                </div>
                 <nav id="nav_bar">
                     <ul>
-                        <li><a href="#quem_somos" onclick="Quemsomos()">Quem somos</a></li>
-                        <li><a href="#nossos_servicos">Serviços</a></li>
+                        <li><a href="quemsomos.html">Quem somos</a></li>
+                        <li><a href="nossosservicos.html">Serviços</a></li>
                         <li><a href="#contatos">Contatos</a></li>
                         <li><a class="button" href="https://api.whatsapp.com/send/?phone=5562994458261&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i>Mandar mensagem</a></li>
                     </ul>
                 </nav>
-                <a class="button" id="button_mobile" href="https://api.whatsapp.com/send/?phone=5562994458261&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i>Mandar mensagem</a>
-                <!-- <a  onclick="Navbar_slide()" id="menu_bars">
-                    <i class="fa-solid fa-bars"></i>
-                </a> -->
             </div>
     </header>
     <main>
@@ -41,7 +38,7 @@
         <section>
             <div id="main_section" >
                 <div id="main_left">
-                    <h1>Assesoria Logística</h1>
+                    <h1>Assessoria Logística</h1>
                     <h2>De Goiânia para todo o Brasil e exterior.</h2>
                     <!-- <a>Entrar em contato</a> -->
                 </div>
@@ -50,46 +47,6 @@
                 </div>
             </div>
         </section>
-
-        <section id="quem_somos" class="sections">
-            <div>
-                <button onclick="Sanfona()" class="sanfona" id="sanf">
-                    <h2>Quem Somos</h2>
-                    <i id="i-sanf" class="fa-solid fa-caret-down"></i>
-                </button>
-                
-                <div id="qs_div">
-                    <div>
-                        <h3>Futura Log</h3>
-                        <h4>Assessoria Logística</h4>
-                        <p>A <b>Futura Log</b>, é uma <b>assessoria logística</b> que nasceu em 2021 de uma
-                            necessidade de atendimento para clientes que tem urgência nos envios de
-                            suas mercadorias, que precisam de um atendimento <b>humanizado e seguro,</b>
-                            tanto para o lojista quanto para o revendedor.</p>
-                            <p>Especializada no envio de
-                                mercadorias no segmento de confecção e assessórios com peso de até 50kg,
-                                contamos com parcerias com as maiores transportadoras do Brasil,
-                                atendendo de norte a sul do pais, e também no exterior com entrega em
-                                mais de 100 países com rastreio em tempo real, entre nossos serviços,</p> <p>o de
-                                    Guarda Box (armazenagem) se destaca, aonde reunimos os pedidos em
-                                    poucos volumes, deixando assim seu frete mais acessível, e com a
-                                    comodidade de entrega em nossa unidade na região da 44 em Goiânia,
-                                    recebemos e enviando mercadorias diariamente,</p> <p>também temos o serviço
-                                        de Compra Certa, caso o cliente precise ter certeza se a loja que esta
-                                        comprando é verdadeira, um de nossos colaboradores vai ate a loja antes
-                                        do fechamento da venda, trazendo segurança em suas compras, nosso
-                                        serviço de coleta é feito na grande Goiânia, além dos principais polos têxtil
-                                        atacadistas, com agilidade e praticidade.</p> <p>A Futura Log tem como objetivo,
-                                            transportar de forma rápida e acessível mercadorias para o pequeno e
-                                            médio revendedor, contribuindo assim para o crescimento tanto dos
-                                            parceiros quanto para os lojistas, gerando renda e independência financeira
-                                            para todos os empreendedores e empresários que contribuem para o
-                                            crescimento do nosso pais!</p></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="valores" class="sections">
             <div> 
                 <img src="img/Group 18 (2).png" alt="">
@@ -102,17 +59,17 @@
                             e excelência na prestação de serviços logísticos.</p>
                     </div>
                     <div>
-                        <h3 style="color: var(--color-two);">VISÃO</h3>
+                        <h3>VISÃO</h3>
                         <p>Ser reconhecida como referência no setor de transportes em nível nacional,
                             usando tecnologia de ponta para garantir a satisfação dos nossos clientes e
                             parceiros, contribuindo com a sustentabilidade e longevidade do setor.</p>
                     </div>
                     <div>
                         <h3>VALORES</h3>
-                        <p><b>Ética</b> – em nossas ações e decisões <br>
-                            <b>Comprometimento</b> - Satisfação dos nossos clientes<br>
-                            <b>Valorização dos nossos colaboradores</b> – motivados e incentivados<br>
-                            <b>Confiança</b> - Pontualidade<br>
+                        <p><b>Ética</b> – em nossas ações e decisões <br><br>
+                            <b>Comprometimento</b> - Satisfação dos nossos clientes<br><br>
+                            <b>Valorização dos nossos colaboradores</b> – motivados e incentivados<br><br>
+                            <b>Confiança</b> - Pontualidade<br><br>
                             <b>Responsabilidade social e ambiental</b> – acreditar nas pessoas, garantir um
                             futuro melhor</p>
                     </div>
@@ -138,43 +95,6 @@
                 
             </div>
         </section>
-        <section id="nossos_servicos" class="sections">
-            <div>
-                <h2>Nossos serviços</h2>
-                <div id="ns_cards">
-                    <div class="card_serv">
-                        <img src="" alt="">
-                        <h3>Guarda-Box</h3>
-                        <p>Reunimos os pedidos em
-                            poucos volumes, deixando assim seu frete mais acessível, e com a
-                            comodidade de entrega em nossa unidade na região da 44 em Goiânia,
-                            recebemos e enviando mercadorias diariamente</p>
-                    </div>
-                    <div class="card_serv">
-                        <img src="" alt="">
-                        <h3>Compra certa</h3>
-                        <p>Caso o cliente precise ter certeza se a loja que esta
-                            comprando é verdadeira, um de nossos colaboradores vai ate a loja antes
-                            do fechamento da venda, trazendo segurança em suas compras</p>
-                    </div>
-                    <div class="card_serv">
-                        <img src="" alt="">
-                        <h3>Cotação de frete</h3>
-                        <p>(armazenagem) se destaca, aonde reunimos os pedidos em
-                            poucos volumes, deixando assim seu frete mais acessível, e com a
-                            comodidade de entrega em nossa unidade na região da 44 em Goiânia,
-                            recebemos e enviando mercadorias diariamente</p>
-                    </div> <div class="card_serv">
-                        <img src="" alt="">
-                        <h3>Envios Internacionais</h3>
-                        <p>Caso o cliente precise ter certeza se a loja que esta
-                            comprando é verdadeira, um de nossos colaboradores vai ate a loja antes
-                            do fechamento da venda, trazendo segurança em suas compras</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section>
             <div id="parceiros">
                 <div class="slider_track">
@@ -250,6 +170,6 @@
             </div>
         </footer>
     </main>
-        
+    <script src="script.js"></script>  
 </body>
 </html>

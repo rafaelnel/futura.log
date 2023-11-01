@@ -7,28 +7,24 @@ function Navbar_slide() {
     }
   }
 
-  function Sanfona() {
-    let sb = document.getElementById("qs_div");
-    let sanf = document.getElementById("sanf");
-    let i = document.getElementById("i-sanf");
-    if (sb.style.display === "flex") {
-      sb.style.display = "none";
-    } else {
-      sb.style.display = "flex";
-    }
-    if (sb.style.maxHeight) {
-      sb.style.maxHeight = null;
-    } else {
-      sb.style.maxHeight = sb.scrollHeight + "px";
-    } 
-    sanf.classList.toggle("ativo");
-    i.classList.toggle("rotated-image");
-  }
 
+var menuicon = document.getElementById("menu-icon");
+var navbar = document.getElementById("nav_bar");
+var ul = navbar.firstElementChild;
 
-function Quemsomos() {
-  let sb = document.getElementById("qs_div");
-  if (sb.style.display === "none") {
-    Sanfona();
+function Menu() {
+  let c = (ul.childElementCount)*50;
+  
+  if (ul.style.display == "flex") {
+    navbar.style.height = 0;
+    ul.style.display = "none";
+    menuicon.classList.remove("fa-xmark");
+    menuicon.classList.add("fa-bars");
+    
+  } else {
+    navbar.style.height = c + "px";   
+    menuicon.classList.add("fa-xmark");
+    menuicon.classList.remove("fa-bars");
+    ul.style.display = "flex"
   }
 }

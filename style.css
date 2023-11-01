@@ -39,6 +39,21 @@ header {
     }
 }
 
+#header_div {
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+
+}
+
+#menu-icon {
+    display: none;
+}
+
 
 #logo {
     >img {
@@ -84,6 +99,8 @@ main {
         border-bottom-left-radius: 1em;
         border-top-left-radius: 1em;
         background-color: var(--color-one);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 1;
     }
 
     >div i, >div h3 {
@@ -95,9 +112,6 @@ main {
 
 
 }
-
-
-
 
 
 
@@ -115,35 +129,16 @@ section {
 
 #main_left{
     margin-right: 2em;
-    gap: 2em;
+    gap: 1em;
     display: flex;
     justify-content: center;
     flex-direction: column;
     >h2 {
         color: var(--color-two);
-        font-weight: 500;
-        font-size: 1.5em;
+        font-weight: 600;
+        font-size: 1.3em;
     }
 
-    /* >a{
-        color: white;
-        font-size: 1.5em;
-        font-weight: 500;
-        background-color: var(--color-one);
-        padding: 0.7em;
-        text-align: center;
-        width: 12em;
-        border-radius: 0.5em;
-        border: 0.1em solid var(--color-one);
-        transition: all 0.5s;
-        
-    }
-
-    >a:hover {
-        background-color: white;
-        color: var(--color-one);
-        cursor: pointer;
-    } */
 }
 
 h1 {
@@ -153,7 +148,7 @@ h1 {
 
 #mainimg {
     width: 700px;
-    margin-bottom: -0.5em;
+    margin-top: -6em;
 }
 
 #menu_bars {
@@ -185,54 +180,18 @@ h1 {
 }
 
 #quem_somos{
+    margin-top: -6em;
     
-    >div>button>h2 {
+    >div>h2 {
+        font-size: 6em;
         padding: 0;
 
     }
 }
 
-#sanf {
-    border: #a7a7a7 solid 1px;
-    transition: 0.5s;
-    cursor: pointer;
-} 
-
-#sanf:hover {
-    background-color: #e4e4e4;
-}
-
-.ativo {
-    background-color: #e4e4e4;
-
-}
-
-.sanfona {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    width: 100%;
-
-    >i {
-        margin: 0 0 0 0.5em;
-        font-size: 2em;
-        rotate: 180deg;
-    }
-
-}
-
-.rotated-image {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-}
-
 #qs_div {
-    display: none;
-    gap: 3em;
-    padding: 10em 0;
-    max-height: 0;
-    overflow: hidden;
+    margin: 4em 0;
+    display: flex;
     transition: 1s ease-out;
     
     
@@ -257,6 +216,7 @@ h1 {
     >div p {
         font-size: 1.5em;
         text-align: center;
+        text-align: justify;
     }
 }
 
@@ -264,7 +224,7 @@ h1 {
 #valores {
     display: flex;
     flex-direction: row;
-    margin: 4em 0;
+    margin-bottom: 4em;
     >div {
         width: 700px;
     }
@@ -304,7 +264,7 @@ h1 {
     
     >div p {
         font-size: 1.2em;
-        text-align: start;
+        text-align: justify;
         padding-right: 3em;
 
     }
@@ -365,15 +325,48 @@ h1 {
 
 #nossos_servicos {
     background-color: var(--color-one);
-    padding: 5em 0 10em 0;
+    padding: 0em 0 10em 0;
     flex-wrap: wrap;
 
 
     >div h2 {
+        font-size: 5em;
         color: white;
     }
 
 }
+
+.voltar {
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: flex;
+    align-self: flex-start;
+    padding: 1em;
+    gap: 0.5em;
+ 
+
+}
+
+#voltar {
+    color: white;
+  
+    >i {
+        color: white;
+    }
+}
+
+#voltar-B {
+    color: var(--color-dark);
+    
+    >i {
+       color: var(--color-dark);
+    }
+}
+
+
+
 
 
 #ns_cards {
@@ -546,20 +539,30 @@ footer {
         background-color: white;
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 0.5em;
         border-bottom: 1px solid rgb(202, 202, 202);
         >div {
             width: 90%;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
+        }
+
+        >div div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1em;
+
         }
     }
     
     #logo {
         >img {
-            height: 2em;
+            height: 4em;
     
         }
     }
@@ -579,35 +582,57 @@ footer {
             font-weight: 600;
             font-size: 1.2em;
         }
-        li a:hover {
-            color: var(--color-one);
-    
-        }
+    li a:hover {
+        color: var(--color-one);
+
+    }
 
 
-        #mainimg {
-            width: 350px;
-            margin-right: -1em;
-        }
-    
-        #nav_bar {
+    #mainimg {
+        width: 350px;
+        margin-right: -1em;
+    }
+
+    #nav_bar {
+        transition: 1s;
+        height: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+        overflow: hidden;
+        >ul {
             display: none;
-        }
-        #insta_bottom {
-            display: none;
-        }
-    
-        #menu_bars {
-            display: flex;
+            flex-direction: column;
+            align-items: end;
             justify-content: end;
-            font-size: 3em;
         }
+    }
 
-        #button_mobile {
-            display: flex;
-        }
 
-    
+
+    #insta_bottom {
+        display: none;
+    }
+
+    /* #menu_bars {
+        display: flex;
+        justify-content: end;
+        font-size: 3em;
+    } */
+
+    #menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+    #button_mobile {
+        display: flex;
+    }
+
+
     section {
         display: flex;
         justify-content: center;
@@ -622,6 +647,11 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
+    #mainimg {
+        margin-top: 0em;
+    }
+    
     
     #main_left{
         gap: 1em;
@@ -691,75 +721,22 @@ footer {
     }
     
     #quem_somos{
-        background-color: #ffffff;
+        margin-top: 4em;
         
-        >div>button>h2 {
+      
+        background-color: #ffffff;
+        >div {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        >div>h2 {
+            font-size: 5em;
             padding: 0;
     
         }
-    }
-
-    #sanf {
-        border: #a7a7a7 solid 1px;
-        transition: 0.5s;
-        cursor: pointer;
-    } 
-    
-    #sanf:hover {
-        background-color: #cccccc;
-    }
-    
-    .ativo {
-        background-color: #cccccc;
-    
-    }
-    
-    .sanfona {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1em;
-        width: 100%;
-
-    
-        >i {
-            margin: 0 0 0 0.5em;
-            font-size: 2em;
-        }
-    
-    }
-    
-    
-    #qs_div {
-        display: none;
-        gap: 2em;
-        padding: 7em 2em;
-        max-height: 0em;
-    
-        >div {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            justify-content: center;
-            align-items: center;
-            
-        }
-    
-        >div h3 {
-            font-size: 2em;
-            color: var(--color-one);
-        }
-        >div h4 {
-            margin-top: -0.5em;
-            font-size: 1em;
-            color: var(--color-two);
-        }
-        >div p {
-            font-size: 0.8em;
-            text-align: center;
-        }
- 
-    
     }
 
     #valores {
@@ -855,8 +832,12 @@ footer {
     
     #nossos_servicos {
         background-color: var(--color-one);
-        padding: 5em 0;
+        padding: 0;
   
+    }
+
+    .voltar {
+        display: none;
     }
     
     
